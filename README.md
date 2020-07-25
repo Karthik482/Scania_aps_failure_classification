@@ -72,5 +72,26 @@ Relevant Information:
   an identifier and a bin id, like "Identifier_Bin".
   In total there are 171 attributes, of which 7 are 
   histogram variabels. Missing values are denoted by "na".
+  
+  OUTPUT:
+  
+  The accuracy is 0.9943125, and f1 score is 0.8671532846715329.
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     15625
+           1       0.96      0.79      0.87       375
+
+    accuracy                           0.99     16000
+   macro avg       0.98      0.90      0.93     16000
+weighted avg       0.99      0.99      0.99     16000
+
+
+confusion_matrix
+
+[[15612    13]
+ [   78   297]]
+ 
+ Total cost=
+ 
 
 
