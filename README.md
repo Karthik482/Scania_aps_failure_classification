@@ -2,20 +2,15 @@ Air pressure system failure classification at Scania Trucks
 
 Problem description-
 
-Scania makes around 90,000 trucks per each year. Failure of air pressure system in truck manufacture is one of most comman things. If we can classify which truck air pressure system can get failed based on multiple factors before a costomer can buy it, scania can save lot of revenue by not selling bad products to customers.
+Scania makes around 90,000 trucks per each year. Failure of the air pressure system in truck manufacture is one of the most common things. If we can classify which truck air pressure system can get failed based on multiple factors before a customer can buy it, Scania can save a lot of revenue by not selling bad products to customers.
 
 Relevant Information:
    -- Introduction
-     The dataset consists of data collected from heavy Scania 
-     trucks in everyday usage. The system in focus is the 
-     Air Pressure system (APS) which generates pressurised 
-     air that are utilized in various functions in a truck, 
+     The dataset consists of data collected from heavy Scania trucks in everyday usage. The system in focus is the 
+     Air Pressure system (APS) which generates pressurized air that is utilized in various functions in a truck, 
      such as braking and gear changes. The datasets' 
-     positive class consists of component failures 
-     for a specific component of the APS system. 
-     The negative class consists of trucks with failures 
-     for components not related to the APS. The data consists 
-     of a subset of all available data, selected by experts. 
+     the positive class consists of component failures for a specific component of the APS system. 
+     The negative class consists of trucks with failures for components not related to the APS. The data consists of a subset of all available data, selected by experts. 
 
    -- Challenge metric  
 
@@ -35,8 +30,8 @@ Relevant Information:
      and "Cost_2" with the number of instances with type 2 failure, 
      resulting in a "Total_cost".
 
-     In this case Cost_1 refers to the cost that an unnessecary 
-     check needs to be done by an mechanic at an workshop, while 
+     In this case, Cost_1 refers to the cost that an unnecessary 
+     checks need to be done by a mechanic at a workshop, while 
      Cost_2 refer to the cost of missing a faulty truck, 
      which may cause a breakdown.
 
@@ -44,7 +39,7 @@ Relevant Information:
 
 5. Number of Instances: 
      The training set contains 60000 examples in total in which 
-     59000 belong to the negative class and 1000 positive class. 
+     59000 belong to the negative class and 1000 positive classes. 
      The test set contains 16000 examples. 
 
 6. Number of Attributes: 171 
@@ -54,7 +49,7 @@ Relevant Information:
    proprietary reasons. It consists of both single numerical 
    counters and histograms consisting of bins with different 
    conditions. Typically the histograms have open-ended 
-   conditions at each end. For example if we measuring 
+   conditions at each end. For example, if we measuring 
    the ambient temperature "T" then the histogram could 
    be defined with 4 bins where: 
 
@@ -67,16 +62,13 @@ Relevant Information:
    ----------------------------- 
          -20     0      20
 
-  The attributes are as follows: class, then 
-  anonymized operational data. The operational data have 
-  an identifier and a bin id, like "Identifier_Bin".
-  In total there are 171 attributes, of which 7 are 
-  histogram variabels. Missing values are denoted by "na".
+  The attributes are as follows: class, then anonymized operational data. The operational data have an identifier and a bin id, like "Identifier_Bin".
+  In total there are 171 attributes, of which 7 are histogram variables. Missing values are denoted by "na".
   
   OUTPUT:
   
-  The accuracy is 0.9943125, and f1 score is 0.8671532846715329.
-              precision    recall  f1-score   support
+  The accuracy is 0.9943125, and the f1 score is 0.8671532846715329.
+              precision-recall  f1-score   support
 
            0       1.00      1.00      1.00     15625
            1       0.96      0.79      0.87       375
