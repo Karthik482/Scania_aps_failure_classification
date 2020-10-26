@@ -83,7 +83,7 @@ confusion_matrix
 [[15612    13]
  [   78   297]]
  
- Total cost=
+ 
  
 
 
