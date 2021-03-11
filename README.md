@@ -1,16 +1,10 @@
 Air pressure system failure classification at Scania Trucks
 
-Problem description-
+## INTRO-
 
 Scania makes around 90,000 trucks per each year. Failure of the air pressure system in truck manufacture is one of the most common things. If we can classify which truck air pressure system can get failed based on multiple factors before a customer can buy it, Scania can save a lot of revenue by not selling bad products to customers.
 
 Relevant Information:
-   -- Introduction
-     The dataset consists of data collected from heavy Scania trucks in everyday usage. The system in focus is the 
-     Air Pressure system (APS) which generates pressurized air that is utilized in various functions in a truck, 
-     such as braking and gear changes. The datasets' 
-     the positive class consists of component failures for a specific component of the APS system. 
-     The negative class consists of trucks with failures for components not related to the APS. The data consists of a subset of all available data, selected by experts. 
 
    -- Challenge metric  
 
@@ -37,14 +31,14 @@ Relevant Information:
 
      Total_cost = Cost_1*No_Instances + Cost_2*No_Instances.
 
-5. Number of Instances: 
+ Number of Instances: 
      The training set contains 60000 examples in total in which 
      59000 belong to the negative class and 1000 positive classes. 
      The test set contains 16000 examples. 
 
-6. Number of Attributes: 171 
+ Number of Attributes: 171 
 
-7. Attribute Information:
+ Attribute Information:
    The attribute names of the data have been anonymized for 
    proprietary reasons. It consists of both single numerical 
    counters and histograms consisting of bins with different 
